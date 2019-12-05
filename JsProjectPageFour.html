@@ -1,0 +1,106 @@
+<Html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="JSProjectStyles.css">
+	</head>
+	<body>
+	<div id="buttonContainer">
+		<div id="page1">
+			<a href="JsProjectPageTwo.html">About</a>
+		</div>
+		<div id="page2">
+			<a href="JsProjectPageThree.html">Clips</a>
+		</div>
+		<div id="page3">
+			<a href="JsProjectPageFour.html">Characters</a>
+		</div>
+		<div id="page4">
+			<a href="JsProjectPageFive.html">FAQs</a>
+		</div>
+		<div id="page5">
+			<a href="JsProjectPageSix.html">Questions+</a>
+		</div>
+	</div>
+	<h1>Character<br>Information</h1>
+	<button id="clearText">Click To Remove Text</button>
+	<div id="topRow">
+		<div id="character1">
+			<img id="everdeen" src="JavaScript Final Pictures/katniss.jpg">
+			<h3 class="statName1"></h3>
+			<p class="statName2"></p>
+		</div>
+		
+		<div id="character2">
+			<img id="melark" src="JavaScript Final Pictures/peeta.jpg">
+			<h3>wefw</h3>
+			<p>weg</p>
+		</div>
+		
+		<div id="character3">
+			<img id="hawthorne" src="JavaScript Final Pictures/gale.jpg">
+			<h3></h3>
+			<p></p>
+		</div>
+		
+		<div id="character4">
+			<img id="abernathy" src="JavaScript Final Pictures/haymitch.png">
+			<h3></h3>
+			<p></p>
+		</div>
+	</div>
+	<hr>
+	<div id="bottomRow">
+		<div id="character5">
+			<img id="everdeenYoung" src="JavaScript Final Pictures/prim.jpg">
+			<h3></h3>
+			<p></p>
+		</div>
+		
+		<div id="character6">
+			<img id="snow" src="JavaScript Final Pictures/presidentSnow.jpg">
+			<h3></h3>
+			<p></p>
+		</div>
+		
+		<div id="character7">
+			<img id="trinket" src="JavaScript Final Pictures/effie.jpg">
+			<h3></h3>
+			<p></p>
+		</div>
+		
+		<div id="character8">
+			<img id="crane" src="JavaScript Final Pictures/senecaCrane.jpg">
+			<h3></h3>
+			<p></p>
+		</div>
+	</div>
+    <script>
+		var katniss = document.getElementById("everdeen");
+		katniss.addEventListener("click", addStats);
+		var nameStat1 = document.getElementsByClassName("statName1");
+		var nameStat2 = document.getElementById("statName2");
+		var clearedText = document.getElementById("clearText");
+		clearedText.addEventListener("click", removeText);
+		  
+		function addStats(){
+			for(var i = 0; i < nameStat1; i++){
+				nameStat1[0].style.display = "block";
+				nameStat1[0].innerHTML = "Katniss Everdeen"
+			}
+		}
+		function removeText(){
+			nameStat1.innerHTML = "";
+			nameStat2.innerHTML = "";
+			nameStat1.style.display = "none";
+			nameStat2.style.display = "none";
+		}
+		/*
+		nameStat1.style.display = "block";
+		nameStat1.innerHTML = "Katniss Everdeen";
+		nameStat2.style.display = "block";
+		nameStat2.innerHTML = ""
+		*/
+		
+		//Is a great fighter, specializes with a bow. Was given a training score of 11. Struggles with making friends.
+    </script>
+  </body>
+</Html>
