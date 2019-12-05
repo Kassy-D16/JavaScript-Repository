@@ -1,0 +1,49 @@
+<Html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="JSProjectStyles.css">
+	</head>
+	<body>
+	<div id="buttonContainer">
+		<div id="page1">
+			<a href="JsProjectPageTwo.html">About</a>
+		</div>
+		<div id="page2">
+			<a href="JsProjectPageThree.html">Clips</a>
+		</div>
+		<div id="page3">
+			<a href="JsProjectPageFour.html">Characters</a>
+		</div>
+		<div id="page4">
+			<a href="JsProjectPageFive.html">FAQs</a>
+		</div>
+		<div id="page5">
+			<a href="JsProjectPageSix.html">Questions+</a>
+		</div>
+	</div>
+	<h1 id="firstTitle">The Hunger Games</h1>
+		<div id="why">
+			<div id="answer">
+				<h3>About The Movie</h3>
+				<p id="summary">In a divided up North America, there are 12 districts and one capitol. Each year the 12 districts offer up one male and one female to fight in a battle to the death. Only one can win. The story begins in a small district in what was the New York area. District 12 was for coal mining and was a very poor district. During the annual reaping, Primrose Everdeen is picked. Her sister, wanting to protect her from certain death, decides to volunteer as tribute. Peeta Melark is also picked. As a way to gain sympathy and sponsorships, their coach, Haymitch and Peeta make up a story of how Peeta has feelings for a girl back home but she had came with him - that girl being Katniss. Soon, during training, it's clear none of the gamemakers see her potential until she nearly shoots them. This results in them giving her the highest training score of 11 out of all of the participants. During the games, Peeta turns on her and helps pople hunt her down but they end up betraying him and leave him to die of sickness. Katniss finds his blood trail and finds him camoflagued. She helps take care of him and soon their love begins to blossom. Then, the gamemakers make a rule that if two people from the same district are alive still, they both win. This results in a final showdown with Katniss, Peeta, and District 2's Cato. Cato is eliminated by rabid wolves*?* then the it leaves Peeta and Katniss. The gamemakers tell them the two winner rule was a lie and they must battle it out. They decide to eat poisonous berries together so there is no winner. The winners of the 74 annual Hunger Games is Katniss Everdeen and Peeta Melark. This event leads the beginning of a domino effect.</p></p>
+			</div>
+			<div id="answer2">
+				<h3>Why Do I Like This Movie?</h3>
+				<p>I like this movie because I loved the story. I had read the book and I loved how there was enough conflict for me to keep reading. There was suspense, love, anger, and a whole bunch more. I liked the setting and the way the districts were portrayed.</p>
+				<button id="tldr">Click For Tl;Dr</button>
+			</div>
+		</div>
+		
+	<script>
+		var summarysSummary = document.getElementById("summary");
+		var summaryButton = document.getElementById("tldr");
+		summaryButton.addEventListener("click", makeSummary);
+		
+		
+		function makeSummary(){
+			summarysSummary.innerHTML = "The poor district 12 must provide one male and one female to battle to the death in the 74th annual Hunger Games. Peeta plots a plan to make it seem like he had a crush on Katniss. During the training, Katniss shows her true abilities by making the Gamemakers pay attention to her when she shoots an arrow at their roasted pig. During the game, Katniss survives for a long time by befriending a 12 year old from district 11. The girl, Rue, reminds Katniss of her sister but unfortunately she faces a tradgic death. On the otherhand, Peeta survives by staying with people from strong districts. They betray him and leave him die. Katniss finds him, she nurses him back to health by loving him. The capitol sponsors give him medicine for their kisses and soon they are told that if two people from the same district are alive, they both win. Peeta and Katniss fight tooth and nail and make it to final three. After fighting Cato, one of the strongest contestents, it's just them. The gamemakers announce it was all a lie and they need to fight each other for the win. Katniss decides that there shouldn't be a winner so she gives Paeta some poisonous berries and they eat them together. The gamemakes tell them to stop and announce them both the winners of the 74th annual Hunger Games!";
+			document.getElementById("answer").style.height = "550px";
+		}
+	</script>
+	</body>
+</Html>
+
