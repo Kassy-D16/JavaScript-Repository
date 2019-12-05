@@ -1,0 +1,86 @@
+<Html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="JSProjectStyles.css">
+	</head>
+	<body>
+		<div id="buttonContainer">
+			<div id="page1">
+				<a href="JsProjectPageTwo.html">About</a>
+			</div>
+			<div id="page2">
+				<a href="JsProjectPageThree.html">Clips</a>
+			</div>
+			<div id="page3">
+				<a href="JsProjectPageFour.html">Characters</a>
+			</div>
+			<div id="page4">
+				<a href="JsProjectPageFive.html">FAQs</a>
+			</div>
+			<div id="page5">
+				<a href="JsProjectPageSix.html">Questions+</a>
+			</div>
+		</div>
+		
+		<hr>
+		
+		<select id="videoList">
+			<option>Click to See Clips</option>
+			<option value="1">1. I Volunteer as Tribute! </option>
+			<option>2. Saying Goodbye</option>
+			<option>3. Get People to Like You</option>
+			<option>4. Shooting the Apple</option>
+			<option>5. Hope</option>
+			<option>6. Star-Crossed Lovers</option>
+			<option>7. They Don’t Own Me</option>
+			<option>8. Cornucopia Bloodbath</option>
+			<option>9. Tracker Jackers</option>
+			<option>10. Rue’s Death</option>
+			<option>11. The Kiss</option>
+			<option>12. Rule Change</option>
+		</select>
+		
+		<div id="videoContainer">
+			<iframe class="hide" id="first" width="650" height="400" src="https://www.youtube.com/embed/v98Rh9qzmPs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe class="hide" id="second" width="650" height="400" src="https://www.youtube.com/embed/KAal6-tvckw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe class="hide" id="third" width="650" height="400" src="https://www.youtube.com/embed/Z92aHy9-fkk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe class="hide" id="forth" width="650" height="400" src="https://www.youtube.com/embed/G9VI6SExDms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe class="hide" id="fifth" width="650" height="400" src="https://www.youtube.com/embed/mtuBqolFOVs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe class="hide" id="sixth" width="650" height="400" src="https://www.youtube.com/embed/XrvB53IDIqM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe class="hide" id="seventh" width="650" height="400" src="https://www.youtube.com/embed/WCbXSTBBueU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe class="hide" id="eigth" width="650" height="400" src="https://www.youtube.com/embed/oISBveQNkzA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe class="hide" id="ninth" width="650" height="400" src="https://www.youtube.com/embed/gaoMc6MgvNA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe class="hide" id="tenth" width="650" height="400" src="https://www.youtube.com/embed/Ed5xIjGdqb4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe class="hide" id="eleventh" width="650" height="400" src="https://www.youtube.com/embed/7ikLl_nUM2A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe class="hide" id="twelveth" width="650" height="400" src="https://www.youtube.com/embed/mgr2tLYYha4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	<script>
+		var vidList = document.getElementById("videoList");
+		vidList = addEventListener("change", showVideo);
+		
+		var hiddenClass = document.getElementsByClassName("hide");
+		
+		var firstVid = document.getElementById("first");
+		var secondVid = document.getElementById("second");
+		var thirdVid = document.getElementById("third");
+		var forthVid = document.getElementById("forth");
+		var fifthVid = document.getElementById("fifth");
+		var sixthVid = document.getElementById("sixth");
+		var seventhVid = document.getElementById("seventh");
+		var eigthVid = document.getElementById("eigth");
+		var ninthVid = document.getElementById("ninth");
+		var tenthVid = document.getElementById("tenth");
+		var eleventhVid = document.getElementById("eleventh");
+		var twelvethVid = document.getElementById("twelveth");
+		
+		function showVideo(){
+			for(var i = 0; i < hiddenClass.length; i++){
+				
+			}
+			
+			if(vidList.value == "1"){
+				firstVid.style.display = "block";
+			}
+		}
+	</script>
+	</body>
+</Html>
